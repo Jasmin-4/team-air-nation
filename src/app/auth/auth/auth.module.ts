@@ -4,13 +4,16 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from '../components/home/home.component';
+
 
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +22,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   exports : [
     LoginComponent, 
-    RegisterComponent 
+    RegisterComponent,
+    HomeComponent
+
   ]
 })
 export class AuthModule { }
